@@ -1,6 +1,7 @@
 package com.fairythm.fairythmmarket;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.nfc.Tag;
@@ -46,9 +47,12 @@ public class Categories extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                Intent intent;
                 switch (menuItem.getItemId()) {
                     case R.id.appList:
-                        getPKList(Categories.this);
+                        //getPKList(Categories.this);
+                        intent=new Intent(Categories.this,LocalApps.class);
+                        startActivity(intent);
                         categoryDrawerLayout.closeDrawers();
                         break;
                     case R.id.application:
