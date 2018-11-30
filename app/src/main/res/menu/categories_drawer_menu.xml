@@ -13,6 +13,10 @@
             android:icon="@drawable/ic_games"
             android:title="Game"/>
 
+        <item
+            android:id="@+id/appList"
+            android:icon="@drawable/ic_app_in"
+            android:title="Installed Apps"/>
     </group>
 
 </menu>
