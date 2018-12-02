@@ -20,6 +20,8 @@ import android.widget.Toolbar;
 
 import java.util.List;
 
+//这是主活动，启动后显示
+
 public class Categories extends AppCompatActivity {
 
     private DrawerLayout categoryDrawerLayout;
