@@ -7,11 +7,31 @@
     android:layout_height="match_parent"
     tools:context=".LocalApps">
 
+    <RelativeLayout
+        android:id="@+id/local_app_info_label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#40328945">
+        <TextView
+            android:id="@+id/local_app_info_label"
+            android:text="Installed Apps:"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+    </RelativeLayout>
+
     <ListView
         android:id="@+id/packages_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/categories_toolbar">
+        android:layout_below="@id/local_app_info_label_layout"
+        android:layout_margin="16dp"
+        android:divider="@null">
 
     </ListView>
 
